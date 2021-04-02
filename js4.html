@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js</title>
+</head>
+<body>
+  
+
+
+<script> 
+
+  var unit = prompt("Enter your unit:"); 
+
+  var bill = 0;
+ 
+  if(unit <= 50){   
+    bill = unit * 0.5;   
+  }
+  if(unit > 50 && unit <= 150){ 
+    bill = (50*0.5) + (unit - 50)*0.75;
+  } 
+  if(unit > 150 && unit <= 250){
+    bill = (50*0.5) + (100*0.75) + (unit - 150)*1.20;
+  }
+  if(unit > 250){
+    bill = (50*0.5) + (100*0.75) + (100*1.20) + (unit - 250)*1.50;
+  }
+
+  var total_bill = bill + (bill*20)/100; 
+
+  document.write(total_bill);
+
+
+    
+</script>
+
+
+</body>
+</html>

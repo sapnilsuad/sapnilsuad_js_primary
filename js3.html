@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js</title>
+</head>
+<body>
+  
+
+
+<script> 
+
+  var sub1 = parseInt(prompt("Enter the number of physics")); 
+  var sub2 = parseInt(prompt("Enter the number of Chemistry")); 
+  var sub3 = parseInt(prompt("Enter the number of Biology")); 
+  var sub4 = parseInt(prompt("Enter the number of Mathemetics")); 
+  var sub5 = parseInt(prompt("Enter the number of Computer")); 
+
+  var tmark = sub1 + sub2 + sub3 + sub4 + sub5; 
+  
+  var tgrade = tmark / 5 ;
+
+
+  if(sub1 >= 40 && sub2 >= 40 && sub3 >= 40 && sub4 >= 40 && sub5 >= 40){      
+    if(tgrade >= 90 && tgrade < 100 ){
+      document.write("Your Number Percenentage: "+tgrade+" <br>  Your Grade point: A");   
+    } 
+    if(tgrade >= 80 && tgrade < 89 ){ 
+      document.write("Your Number Percenentage: "+tgrade+" <br>  Your Grade point: B");   
+    } 
+    if(tgrade >= 70 && tgrade < 79 ){
+      document.write("Your Number Percenentage: "+tgrade+" <br>  Your Grade point: C");   
+    } 
+    if(tgrade >= 60 && tgrade < 69 ){
+      document.write("Your Number Percenentage: "+tgrade+" <br>  Your Grade point: D");   
+    } 
+    if(tgrade >= 40 && tgrade < 59 ){ 
+      document.write("Your Number Percenentage: "+tgrade+" <br>  Your Grade point: E");   
+    } 
+  }
+  else{ 
+    document.write("You are Fail !!!!");
+  } 
+
+  
+
+    
+</script>
+
+
+</body>
+</html>
